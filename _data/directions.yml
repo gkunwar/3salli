@@ -1,0 +1,45 @@
+- id: butwal
+  city_ne: बुटवल
+  city_en: Butwal
+  duration_ne: करिब ३–४ घण्टा (सडक अवस्थाअनुसार)
+  duration_en: About 3–4 hours (depending on road conditions)
+  tip_ne: बिहानै निस्कँदा बाटो सजिलो हुन्छ; स्थानीय जीप वा बस सन्धिखर्कतर्फ लिने।
+  tip_en: Morning departures are easier; take a local jeep or bus toward Sandhikharka.
+  steps_ne:
+    - बुटवलबाट पाल्पा / तानसेन वा सिधै अर्घाखाँची जाने सडक समात्नुहोस्।
+    - सन्धिखर्क बजार पुगेपछि मलरानी / गर्छातर्फ स्थानीय सवारी सोध्नुहोस्।
+    - मलरानी–२, गर्छा पुगेपछि मन्दिर जाने पैदल वा छोटो सवारी बाटो स्थानीयबाट थाहा पाउन सकिन्छ।
+  steps_en:
+    - From Butwal, take the road toward Palpa / Tansen or the direct Arghakhanchi route.
+    - After reaching Sandhikharka bazaar, ask for local transport toward Malarani / Garchha.
+    - In Malarani-2, Garchha, locals can point you to the short walk or ride to the temple.
+- id: tamghas
+  city_ne: तमघास
+  city_en: Tamghas
+  duration_ne: करिब २–३ घण्टा
+  duration_en: About 2–3 hours
+  tip_ne: गुल्मी–अर्घाखाँची जोड्ने स्थानीय बाटो प्रयोग गर्नुहोस्; मौसम खराब हुँदा पहिले सोध्नुहोस्।
+  tip_en: Use the Gulmi–Arghakhanchi local corridor; check conditions in bad weather.
+  steps_ne:
+    - तमघासबाट अर्घाखाँची / सन्धिखर्क जोड्ने बाटो समात्नुहोस्।
+    - बीचका बजारहरूमा गर्छा / मलरानी जाने सवारी पुष्टि गर्नुहोस्।
+    - गर्छा पुगेपछि तीन सल्ली भागवती मन्दिरतर्फको बाटो सोध्नुहोस्।
+  steps_en:
+    - From Tamghas, take the corridor linking to Arghakhanchi / Sandhikharka.
+    - Confirm jeeps or buses toward Garchha / Malarani at intermediate bazaars.
+    - Once in Garchha, ask for the path to Teen Salli Bhagwati Temple.
+- id: sandhikharka
+  city_ne: सन्धिखर्क
+  city_en: Sandhikharka
+  duration_ne: करिब ४५ मिनेट–१.५ घण्टा
+  duration_en: About 45 minutes–1.5 hours
+  tip_ne: जिल्ला सदरमुकाम नजिक भएकाले स्थानीय जीप सजिलै पाइन्छ।
+  tip_en: As the district headquarters, local jeeps are usually easy to find.
+  steps_ne:
+    - सन्धिखर्क बजारबाट मलरानी जाने स्थानीय जीप वा मोटरसाइकल सेवा लिनुहोस्।
+    - मलरानी–२ तर्फ लाग्दै गर्छा गाउँ पुग्नुहोस्।
+    - गाउँबाट मन्दिरको छोटो उकालो / बाटो संकेत हेर्नुहोस्।
+  steps_en:
+    - From Sandhikharka bazaar, take a local jeep or motorcycle service toward Malarani.
+    - Continue to Garchha village in Malarani-2.
+    - Follow the short uphill path to the temple from the village.

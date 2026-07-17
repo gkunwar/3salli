@@ -1,0 +1,103 @@
+ne:
+  brand: तीन सल्ली
+  brand_full: तीन सल्ली भागवती मन्दिर
+  lang_label: नेपाली
+  lang_other: English
+  nav_home: गृह
+  nav_story: मन्दिर कथा
+  nav_history: इतिहास
+  nav_donors: दाताहरू
+  nav_videos: भिडियो
+  nav_visit: कसरी पुग्ने
+  menu: मेनु
+  close: बन्द
+  cta_visit: बाटो हेर्नुहोस्
+  cta_story: मन्दिरको कथा
+  cta_donate_info: दाता सूची
+  location_label: स्थान
+  location: अर्घाखाँची, मलरानी–२, गर्छा
+  province: लुम्बिनी प्रदेश, नेपाल
+  footer_blessing: जय भगवती माता
+  footer_note: नमूना सामग्री — वास्तविक विवरण पछि अद्यावधिक गरिनेछ।
+  home_hero_line: पहाडी शान्तिका देवस्थान
+  home_hero_sub: अर्घाखाँचीको गर्छामा अवस्थित तीन सल्ली भागवती मन्दिर — आस्था, इतिहास र समुदायको केन्द्र।
+  home_about_title: मन्दिरबारे
+  home_about_text: तीन सल्ली भागवती मन्दिर स्थानीय श्रद्धालुहरूको आस्थाको थलो हो। यहाँ पूजा, चाडपर्व र सामुदायिक सेवा नियमित रूपमा हुन्छन्।
+  home_sections_title: अन्वेषण गर्नुहोस्
+  home_story_card: मन्दिरको कथा र आस्थाको यात्रा
+  home_history_card: पुरानो, हालको र नयाँ मन्दिरको इतिहास
+  home_donors_card: दाता र सहयोगको सूची
+  home_videos_card: मन्दिरसम्बन्धी युट्युब भिडियो
+  home_visit_card: बुटवल, तमघास र सन्धिखर्कबाट बाटो
+  home_visit_teaser_title: दर्शनका लागि आउनुहोस्
+  home_visit_teaser: लुम्बिनी प्रदेशका मुख्य शहरहरूबाट गर्छासम्मको बाटो सरल छ।
+  donors_title: दाताहरू
+  donors_intro: मन्दिर निर्माण, जीर्णोद्धार र सेवामा सहयोग गर्ने दाताहरूको सम्मान सूची।
+  donors_name: नाम
+  donors_gift: सहयोग
+  donors_note: तलको सूची नमूना हो।
+  story_title: मन्दिर कथा
+  history_title: मन्दिरको इतिहास
+  history_intro: तीन सल्ली भागवती मन्दिरको यात्रा — पुरानो थलोदेखि हालको संरचना र नयाँ योजनासम्म।
+  videos_title: युट्युब भिडियो
+  videos_intro: मन्दिर, पूजा र समुदायसँग सम्बन्धित भिडियोहरू।
+  visit_title: कसरी पुग्ने
+  visit_intro: लुम्बिनी प्रदेशका प्रमुख शहरहरूबाट अर्घाखाँची, मलरानी–२, गर्छास्थित मन्दिर पुग्ने बाटो।
+  visit_from: बाट
+  visit_steps: बाटो
+  visit_tip_title: सुझाव
+  era_old: पुरानो मन्दिर
+  era_current: हालको मन्दिर
+  era_new: नयाँ मन्दिर
+
+en:
+  brand: Teen Salli
+  brand_full: Teen Salli Bhagwati Temple
+  lang_label: English
+  lang_other: नेपाली
+  nav_home: Home
+  nav_story: Temple Story
+  nav_history: History
+  nav_donors: Donors
+  nav_videos: Videos
+  nav_visit: How to Reach
+  menu: Menu
+  close: Close
+  cta_visit: Get directions
+  cta_story: Read the story
+  cta_donate_info: View donors
+  location_label: Location
+  location: Arghakhanchi, Malarani-2, Garchha
+  province: Lumbini Province, Nepal
+  footer_blessing: Jai Bhagwati Mata
+  footer_note: Sample content — details will be updated with verified information.
+  home_hero_line: A hill shrine of quiet devotion
+  home_hero_sub: Teen Salli Bhagwati Temple in Garchha, Arghakhanchi — a place of faith, memory, and community.
+  home_about_title: About the temple
+  home_about_text: Teen Salli Bhagwati Temple is a local centre of devotion. Worship, festivals, and community service continue throughout the year.
+  home_sections_title: Explore
+  home_story_card: The temple story and living faith
+  home_history_card: Old, present, and new temple eras
+  home_donors_card: Donors and offerings
+  home_videos_card: Related YouTube videos
+  home_visit_card: Routes from Butwal, Tamghas, and Sandhikharka
+  home_visit_teaser_title: Plan your visit
+  home_visit_teaser: Clear routes connect major towns of Lumbini Province to Garchha.
+  donors_title: Donors
+  donors_intro: Honouring those who support temple construction, care, and service.
+  donors_name: Name
+  donors_gift: Contribution
+  donors_note: The list below is sample data.
+  story_title: Temple Story
+  history_title: Temple History
+  history_intro: From the old shrine to the present structure and plans for the new temple.
+  videos_title: YouTube Videos
+  videos_intro: Videos related to the temple, worship, and community life.
+  visit_title: How to Reach
+  visit_intro: Routes from major cities of Lumbini Province to the temple at Arghakhanchi, Malarani-2, Garchha.
+  visit_from: From
+  visit_steps: Route
+  visit_tip_title: Tip
+  era_old: Old temple
+  era_current: Current temple
+  era_new: New temple

@@ -1,0 +1,28 @@
+{% assign t = site.data.strings[page.lang] %}
+{% assign prefix = page.lang %}
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="logo" href="{{ '/' | append: prefix | append: '/' | relative_url }}">
+      <span class="logo-mark">३</span>
+      <span class="logo-text">
+        <strong>{{ t.brand }}</strong>
+        <small>{% if page.lang == 'ne' %}भागवती मन्दिर{% else %}Bhagwati Temple{% endif %}</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="nav-toggle-label">{{ t.menu }}</span>
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" data-nav>
+      <a href="{{ '/' | append: prefix | append: '/' | relative_url }}" {% if page.nav == 'home' %}aria-current="page"{% endif %}>{{ t.nav_home }}</a>
+      <a href="{{ '/' | append: prefix | append: '/story/' | relative_url }}" {% if page.nav == 'story' %}aria-current="page"{% endif %}>{{ t.nav_story }}</a>
+      <a href="{{ '/' | append: prefix | append: '/history/' | relative_url }}" {% if page.nav == 'history' %}aria-current="page"{% endif %}>{{ t.nav_history }}</a>
+      <a href="{{ '/' | append: prefix | append: '/donors/' | relative_url }}" {% if page.nav == 'donors' %}aria-current="page"{% endif %}>{{ t.nav_donors }}</a>
+      <a href="{{ '/' | append: prefix | append: '/videos/' | relative_url }}" {% if page.nav == 'videos' %}aria-current="page"{% endif %}>{{ t.nav_videos }}</a>
+      <a href="{{ '/' | append: prefix | append: '/visit/' | relative_url }}" {% if page.nav == 'visit' %}aria-current="page"{% endif %}>{{ t.nav_visit }}</a>
+      {% include lang-switch.html %}
+    </nav>
+  </div>
+</header>

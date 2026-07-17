@@ -1,0 +1,78 @@
+---
+layout: default
+---
+{% assign t = site.data.strings[page.lang] %}
+{% assign p = '/' | append: page.lang %}
+
+<section class="hero">
+  <div class="hero-media" aria-hidden="true">
+    <img src="{{ '/assets/images/hero-temple.jpg' | relative_url }}" alt="" width="1600" height="900">
+  </div>
+  <div class="hero-veil"></div>
+  <div class="hero-content">
+    <p class="brand-mark">{{ t.brand_full }}</p>
+    <h1>{{ t.home_hero_line }}</h1>
+    <p class="hero-sub">{{ t.home_hero_sub }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ p | append: '/visit/' | relative_url }}">{{ t.cta_visit }}</a>
+      <a class="btn btn-ghost" href="{{ p | append: '/story/' | relative_url }}">{{ t.cta_story }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section about-band">
+  <div class="section-inner split">
+    <div class="about-copy reveal">
+      <p class="eyebrow">{{ t.location_label }}</p>
+      <h2>{{ t.home_about_title }}</h2>
+      <p>{{ t.home_about_text }}</p>
+      <p class="place-line"><strong>{{ t.location }}</strong><br>{{ t.province }}</p>
+    </div>
+    <figure class="about-figure reveal">
+      <img src="{{ '/assets/images/shrine-detail.jpg' | relative_url }}" alt="{{ t.brand_full }}" width="1200" height="900">
+    </figure>
+  </div>
+</section>
+
+<section class="section explore-band">
+  <div class="section-inner">
+    <header class="section-head reveal">
+      <h2>{{ t.home_sections_title }}</h2>
+    </header>
+    <div class="explore-grid">
+      <a class="explore-link reveal" href="{{ p | append: '/story/' | relative_url }}">
+        <span class="explore-label">{{ t.nav_story }}</span>
+        <span class="explore-text">{{ t.home_story_card }}</span>
+      </a>
+      <a class="explore-link reveal" href="{{ p | append: '/history/' | relative_url }}">
+        <span class="explore-label">{{ t.nav_history }}</span>
+        <span class="explore-text">{{ t.home_history_card }}</span>
+      </a>
+      <a class="explore-link reveal" href="{{ p | append: '/donors/' | relative_url }}">
+        <span class="explore-label">{{ t.nav_donors }}</span>
+        <span class="explore-text">{{ t.home_donors_card }}</span>
+      </a>
+      <a class="explore-link reveal" href="{{ p | append: '/videos/' | relative_url }}">
+        <span class="explore-label">{{ t.nav_videos }}</span>
+        <span class="explore-text">{{ t.home_videos_card }}</span>
+      </a>
+      <a class="explore-link explore-link-wide reveal" href="{{ p | append: '/visit/' | relative_url }}">
+        <span class="explore-label">{{ t.nav_visit }}</span>
+        <span class="explore-text">{{ t.home_visit_card }}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section visit-teaser">
+  <div class="section-inner visit-teaser-inner reveal">
+    <div class="visit-teaser-copy">
+      <h2>{{ t.home_visit_teaser_title }}</h2>
+      <p>{{ t.home_visit_teaser }}</p>
+      <a class="btn btn-primary" href="{{ p | append: '/visit/' | relative_url }}">{{ t.cta_visit }}</a>
+    </div>
+    <figure class="visit-teaser-media">
+      <img src="{{ '/assets/images/journey-hills.jpg' | relative_url }}" alt="" width="1600" height="900">
+    </figure>
+  </div>
+</section>

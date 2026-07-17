@@ -1,0 +1,19 @@
+{% assign t = site.data.strings[page.lang] %}
+{% assign page_id = page.nav | default: 'home' %}
+{% assign alt_lang = 'en' %}
+{% if page.lang == 'en' %}
+  {% assign alt_lang = 'ne' %}
+{% endif %}
+{% assign alt_path = '/' | append: alt_lang | append: '/' %}
+{% for item in site.data.navigation %}
+  {% if item.id == page_id %}
+    {% if alt_lang == 'en' %}
+      {% assign alt_path = item.path_en %}
+    {% else %}
+      {% assign alt_path = item.path_ne %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+<a class="lang-switch" href="{{ alt_path | relative_url }}" hreflang="{{ alt_lang }}" lang="{{ alt_lang }}">
+  {{ t.lang_other }}
+</a>

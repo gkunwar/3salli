@@ -1,0 +1,39 @@
+- id: old
+  era_key: era_old
+  year_ne: वि.सं. ~२००० अघि
+  year_en: Before ~1940s CE
+  image: /assets/images/shrine-detail.jpg
+  title_ne: पुरानो मन्दिर
+  title_en: Old temple
+  body_ne: >
+    स्थानीय कथाअनुसार तीन सल्ली थलो सल्लोका रुख र साधारण पूजास्थलबाट सुरु भएको थियो।
+    प्रारम्भिक संरचना काठ र ढुङ्गाले बनेको सानो देवालय थियो, जहाँ गाउँलेहरू चाडपर्वमा भेला हुन्थे।
+  body_en: >
+    Local memory places Teen Salli at a pine grove and a simple shrine.
+    The earliest structure was a small timber-and-stone sanctuary where villagers gathered for festivals.
+- id: current
+  era_key: era_current
+  year_ne: हालसम्म
+  year_en: Present day
+  image: /assets/images/hero-temple.jpg
+  title_ne: हालको मन्दिर
+  title_en: Current temple
+  body_ne: >
+    हालको मन्दिर गर्छामा नियमित पूजा र सामुदायिक कार्यक्रमको केन्द्र बनेको छ।
+    जीर्णोद्धार, घण्टा, सिँढी र परिसर सुधारमा दाताहरूको सहयोग रहँदै आएको छ।
+  body_en: >
+    The present temple in Garchha is a centre for regular worship and community gatherings.
+    Donors continue to support repairs, bells, stairways, and grounds improvements.
+- id: new
+  era_key: era_new
+  year_ne: आगामी योजना
+  year_en: Upcoming plans
+  image: /assets/images/journey-hills.jpg
+  title_ne: नयाँ मन्दिर
+  title_en: New temple
+  body_ne: >
+    नयाँ मन्दिर योजनामा फराकिलो पूजाकक्ष, सुरक्षित सिँढी र यात्रु सुविधा समावेश गर्ने लक्ष्य छ।
+    समुदायको सहभागिता र पारदर्शी दाता सहयोगबाट यो चरण अघि बढ्नेछ।
+  body_en: >
+    Plans for a new temple envision a wider prayer hall, safer access, and visitor facilities.
+    Community participation and transparent donor support will guide this next chapter.

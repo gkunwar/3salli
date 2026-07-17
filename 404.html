@@ -1,24 +1,19 @@
 ---
 layout: default
+lang: ne
+nav: home
+title: पृष्ठ भेटिएन
+permalink: /404.html
 ---
+{% assign t = site.data.strings.ne %}
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<article class="page">
+  <header class="page-hero">
+    <h1>पृष्ठ भेटिएन</h1>
+    <p class="lede">Page not found.</p>
+  </header>
+  <p>
+    <a class="btn btn-primary" href="{{ '/ne/' | relative_url }}">{{ t.nav_home }}</a>
+    <a class="btn btn-primary" href="{{ '/en/' | relative_url }}" style="margin-left:0.5rem;background:var(--hill)">Home (English)</a>
+  </p>
+</article>
