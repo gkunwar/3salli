@@ -244,7 +244,6 @@ body.lang-ne .eyebrow {
   align-items: end;
   overflow: hidden;
   color: #f8f1e6;
-  /* Matches sky / ground in the temple photo so letterboxing blends */
   background:
     linear-gradient(180deg, #7eb6d8 0%, #9ec4d4 42%, #c4b89a 78%, #a89070 100%);
 }
@@ -260,9 +259,8 @@ body.lang-ne .eyebrow {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: center 46%;
-  /* Fluid zoom: ~1.55 on typical laptop, more on wide screens */
-  transform: scale(clamp(1.4, calc(1.2 + 100vw * 0.00024), 1.85));
+  object-position: center center;
+  transform: scale(1.55);
   transform-origin: center center;
 }
 
@@ -899,54 +897,12 @@ body.lang-ne .donor-table th {
   }
 
   .hero-media img {
-    /* Phones / small tablets need more zoom to fill the frame */
-    object-position: center 40%;
-    transform: scale(clamp(1.55, calc(1.4 + 100vw * 0.0005), 1.75));
+    object-position: center 42%;
+    transform: scale(1.65);
   }
 
   .hero h1 {
     max-width: 18ch;
-  }
-}
-
-/* Very wide desktops / ultrawide: fill side letterboxing */
-@media (min-width: 1600px) {
-  .hero-media img {
-    transform: scale(clamp(1.6, calc(1.25 + 100vw * 0.00022), 1.95));
-    object-position: center 48%;
-  }
-}
-
-/* Short landscape (phones rotated, short laptops): keep full temple in view */
-@media (max-height: 520px) and (orientation: landscape) {
-  .hero {
-    min-height: 100vh;
-  }
-
-  .hero-media img {
-    object-position: center center;
-    transform: scale(1.25);
-  }
-
-  .hero-content {
-    padding: 1.25rem 0 1.5rem;
-  }
-
-  .hero h1 {
-    font-size: clamp(1.6rem, 5vh, 2.4rem);
-  }
-
-  .hero-sub {
-    margin-bottom: 1rem;
-    font-size: 0.98rem;
-  }
-}
-
-/* Tall narrow viewports: ease zoom so the spire stays visible */
-@media (max-width: 860px) and (min-aspect-ratio: 9/16) and (max-aspect-ratio: 10/16) {
-  .hero-media img {
-    transform: scale(1.5);
-    object-position: center 38%;
   }
 }
 
