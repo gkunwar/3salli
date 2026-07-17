@@ -244,27 +244,35 @@ body.lang-ne .eyebrow {
   align-items: end;
   overflow: hidden;
   color: #f8f1e6;
+  /* Matches sky / ground in the temple photo so letterboxing blends */
+  background:
+    linear-gradient(180deg, #7eb6d8 0%, #9ec4d4 42%, #c4b89a 78%, #a89070 100%);
 }
 
 .hero-media {
   position: absolute;
   inset: 0;
+  display: grid;
+  place-items: center;
 }
 
 .hero-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transform: scale(1.04);
-  animation: hero-drift 18s ease-in-out infinite alternate;
+  object-fit: contain;
+  object-position: center 46%;
+  /* Fluid zoom: ~1.55 on typical laptop, more on wide screens */
+  transform: scale(clamp(1.4, calc(1.2 + 100vw * 0.00024), 1.85));
+  transform-origin: center center;
 }
 
 .hero-veil {
   position: absolute;
   inset: 0;
+  pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(22, 53, 42, 0.2) 0%, rgba(20, 36, 31, 0.45) 42%, rgba(14, 28, 24, 0.82) 100%),
-    linear-gradient(95deg, rgba(22, 53, 42, 0.55), transparent 58%);
+    linear-gradient(180deg, rgba(22, 53, 42, 0.08) 0%, rgba(20, 36, 31, 0.18) 48%, rgba(14, 28, 24, 0.78) 100%),
+    linear-gradient(95deg, rgba(14, 28, 24, 0.55) 0%, rgba(14, 28, 24, 0.2) 38%, transparent 62%);
 }
 
 .hero-content {
@@ -680,6 +688,13 @@ body.lang-ne .donor-table th {
   aspect-ratio: 16 / 9;
 }
 
+.video-frame-portrait {
+  aspect-ratio: 9 / 16;
+  max-width: 18rem;
+  margin-inline: auto;
+  width: 100%;
+}
+
 .video-frame iframe {
   position: absolute;
   inset: 0;
@@ -830,11 +845,6 @@ body.lang-ne .donor-table th {
   }
 }
 
-@keyframes hero-drift {
-  from { transform: scale(1.04) translate3d(0, 0, 0); }
-  to { transform: scale(1.1) translate3d(-1.5%, -1%, 0); }
-}
-
 @media (max-width: 860px) {
   .nav-toggle {
     display: inline-flex;
@@ -884,14 +894,64 @@ body.lang-ne .donor-table th {
     grid-column: auto;
   }
 
+  .hero {
+    min-height: min(88vh, 44rem);
+  }
+
+  .hero-media img {
+    /* Phones / small tablets need more zoom to fill the frame */
+    object-position: center 40%;
+    transform: scale(clamp(1.55, calc(1.4 + 100vw * 0.0005), 1.75));
+  }
+
   .hero h1 {
     max-width: 18ch;
   }
 }
 
+/* Very wide desktops / ultrawide: fill side letterboxing */
+@media (min-width: 1600px) {
+  .hero-media img {
+    transform: scale(clamp(1.6, calc(1.25 + 100vw * 0.00022), 1.95));
+    object-position: center 48%;
+  }
+}
+
+/* Short landscape (phones rotated, short laptops): keep full temple in view */
+@media (max-height: 520px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero-media img {
+    object-position: center center;
+    transform: scale(1.25);
+  }
+
+  .hero-content {
+    padding: 1.25rem 0 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.6rem, 5vh, 2.4rem);
+  }
+
+  .hero-sub {
+    margin-bottom: 1rem;
+    font-size: 0.98rem;
+  }
+}
+
+/* Tall narrow viewports: ease zoom so the spire stays visible */
+@media (max-width: 860px) and (min-aspect-ratio: 9/16) and (max-aspect-ratio: 10/16) {
+  .hero-media img {
+    transform: scale(1.5);
+    object-position: center 38%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .hero-media img,
   .hero-content,
   .page-hero,
   .reveal {

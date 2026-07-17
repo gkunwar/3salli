@@ -3,7 +3,7 @@
 {% if page.lang == 'ne' %}
   {% assign title = v.title_ne %}
 {% endif %}
-<div class="video-frame{% if v.platform == 'facebook' %} video-frame-facebook{% endif %}">
+<div class="video-frame{% if v.platform == 'facebook' %} video-frame-facebook{% endif %}{% if v.orientation == 'portrait' %} video-frame-portrait{% endif %}">
   {% if v.platform == 'facebook' %}
   <iframe
     src="{{ v.embed_src }}"
