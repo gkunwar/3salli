@@ -39,6 +39,9 @@ gem "kramdown-parser-gfm"
 # WEBrick was removed from Ruby's standard library in 3.0; required for `jekyll serve`
 gem "webrick"
 
+# Extracted from Ruby default gems in 3.4+; required by Jekyll 3.x on modern CI images
+gem "csv"
+
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
