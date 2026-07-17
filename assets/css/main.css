@@ -893,16 +893,35 @@ body.lang-ne .donor-table th {
   }
 
   .hero {
-    min-height: min(88vh, 44rem);
+    min-height: 100svh;
+    min-height: 100dvh;
+    background: #1a3d30;
   }
 
   .hero-media img {
+    /* Fill the phone screen without the desktop zoom crop */
+    object-fit: cover;
     object-position: center 42%;
-    transform: scale(1.65);
+    transform: none;
+  }
+
+  .hero-veil {
+    background:
+      linear-gradient(180deg, rgba(14, 28, 24, 0.2) 0%, rgba(14, 28, 24, 0.35) 40%, rgba(14, 28, 24, 0.88) 100%);
+  }
+
+  .hero-content {
+    padding: 5.5rem 0 2rem;
   }
 
   .hero h1 {
     max-width: 18ch;
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    margin-bottom: 1.35rem;
   }
 }
 
