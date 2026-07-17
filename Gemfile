@@ -41,6 +41,7 @@ gem "webrick"
 
 # Extracted from Ruby default gems in 3.4+; required by Jekyll 3.x on modern CI images
 gem "csv"
+gem "base64"
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
