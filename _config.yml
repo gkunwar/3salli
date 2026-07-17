@@ -4,8 +4,8 @@ email: ""
 description: >-
   तीन सल्ली भागवती मन्दिर — अर्घाखाँची, मलारानी–२, गर्छा।
   Teen Salli Bhagwati Temple in Arghakhanchi, Malarani-2, Garchha, Lumbini Province, Nepal.
-baseurl: ""
-url: ""
+baseurl: "/3salli"
+url: "https://gkunwar.github.io"
 
 markdown: kramdown
 # Custom theme layouts in _layouts
