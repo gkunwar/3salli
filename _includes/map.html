@@ -1,0 +1,16 @@
+{% assign t = site.data.strings[page.lang] %}
+{% assign m = site.map %}
+<section class="temple-map">
+  <div class="temple-map-head">
+    <h2>{{ t.map_title }}</h2>
+    <a class="map-link" href="{{ m.link }}" target="_blank" rel="noopener">{{ t.map_cta }}</a>
+  </div>
+  <div class="map-frame">
+    <iframe
+      title="{{ t.brand_full }} — {{ t.map_title }}"
+      src="https://www.google.com/maps?q={{ m.lat }},{{ m.lng }}&z={{ m.zoom }}&output=embed"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>

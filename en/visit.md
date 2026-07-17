@@ -25,3 +25,5 @@ permalink: /en/visit/
   </article>
 {% endfor %}
 </div>
+
+{% include map.html %}

@@ -49,6 +49,8 @@ ne:
   visit_from: बाट
   visit_steps: बाटो
   visit_tip_title: सुझाव
+  map_title: मन्दिरको नक्सा स्थान
+  map_cta: गुगल म्यापमा हेर्नुहोस्
   era_old: पुरानो मन्दिर
   era_current: हालको मन्दिर
   era_new: नयाँ मन्दिर
@@ -104,6 +106,8 @@ en:
   visit_from: From
   visit_steps: Route
   visit_tip_title: Tip
+  map_title: Temple map location
+  map_cta: View on Google Maps
   era_old: Old temple
   era_current: Current temple
   era_new: New temple

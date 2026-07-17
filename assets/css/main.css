@@ -688,6 +688,49 @@ body.lang-ne .donor-table th {
   border: 0;
 }
 
+.temple-map {
+  margin: 2.5rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.temple-map-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.temple-map-head h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.map-link {
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.map-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.4rem;
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 34px rgba(22, 53, 42, 0.12);
+}
+
+.map-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .route-list {
   display: grid;
   gap: 1.5rem;

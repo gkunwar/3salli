@@ -7,6 +7,13 @@ description: >-
 baseurl: "/3salli"
 url: "https://gkunwar.github.io"
 
+# Temple map location (Tinsalli Temple, Garchha)
+map:
+  lat: 28.0650315
+  lng: 83.1723049
+  zoom: 15
+  link: "https://maps.app.goo.gl/RrfdL3BzPYKb9e789"
+
 markdown: kramdown
 # Custom theme layouts in _layouts
 theme: null
