@@ -14,7 +14,7 @@ permalink: /ne/visit/
 <div class="route-list">
 {% for route in site.data.directions %}
   <article class="route">
-    <h2>{{ t.visit_from }} {{ route.city_ne }}</h2>
+    <h2>{{ route.city_ne }} {{ t.visit_from }}</h2>
     <p class="route-duration">{{ route.duration_ne }}</p>
     <ol>
       {% for step in route.steps_ne %}
