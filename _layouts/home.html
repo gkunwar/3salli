@@ -64,6 +64,33 @@ layout: default
   </div>
 </section>
 
+<section class="section home-videos-band">
+  <div class="section-inner">
+    <header class="section-head reveal">
+      <h2>{{ t.home_videos_title }}</h2>
+      <p class="section-sub">{{ t.home_videos_intro }}</p>
+    </header>
+    <div class="home-video-grid">
+      {% for video in site.data.videos limit: 3 %}
+      <article class="home-video-item reveal">
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/{{ video.id }}"
+            title="{% if page.lang == 'ne' %}{{ video.title_ne }}{% else %}{{ video.title_en }}{% endif %}"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <h3>{% if page.lang == 'ne' %}{{ video.title_ne }}{% else %}{{ video.title_en }}{% endif %}</h3>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="home-videos-actions reveal">
+      <a class="btn btn-primary" href="{{ p | append: '/videos/' | relative_url }}">{{ t.home_videos_cta }}</a>
+    </p>
+  </div>
+</section>
+
 <section class="section visit-teaser">
   <div class="section-inner visit-teaser-inner reveal">
     <div class="visit-teaser-copy">

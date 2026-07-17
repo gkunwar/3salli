@@ -31,6 +31,9 @@ ne:
   home_visit_card: बुटवल, तमघास र सन्धिखर्कबाट बाटो
   home_visit_teaser_title: दर्शनका लागि आउनुहोस्
   home_visit_teaser: लुम्बिनी प्रदेशका मुख्य शहरहरूबाट गर्छासम्मको बाटो सरल छ।
+  home_videos_title: मन्दिरका भिडियो
+  home_videos_intro: भक्ति, दर्शन र मन्दिर जीवनसँग जोडिएका केही युट्युब भिडियो।
+  home_videos_cta: सबै भिडियो हेर्नुहोस्
   donors_title: दाताहरू
   donors_intro: मन्दिर निर्माण, जीर्णोद्धार र सेवामा सहयोग गर्ने दाताहरूको सम्मान सूची।
   donors_name: नाम
@@ -83,6 +86,9 @@ en:
   home_visit_card: Routes from Butwal, Tamghas, and Sandhikharka
   home_visit_teaser_title: Plan your visit
   home_visit_teaser: Clear routes connect major towns of Lumbini Province to Garchha.
+  home_videos_title: Temple videos
+  home_videos_intro: A few YouTube videos of devotion, darshan, and temple life.
+  home_videos_cta: See all videos
   donors_title: Donors
   donors_intro: Honouring those who support temple construction, care, and service.
   donors_name: Name

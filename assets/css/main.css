@@ -430,6 +430,34 @@ body.lang-ne .eyebrow {
   color: var(--ink-soft);
 }
 
+.section-sub {
+  margin: 0.65rem 0 0;
+  max-width: 36rem;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.home-videos-band {
+  background: linear-gradient(180deg, rgba(156, 43, 31, 0.04), transparent 55%);
+}
+
+.home-video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.home-video-item h3 {
+  margin: 0.85rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.home-videos-actions {
+  margin: 1.75rem 0 0;
+}
+
 .visit-teaser-inner {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -614,6 +642,7 @@ body.lang-ne .donor-table th {
 
 .video-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
 }
 
@@ -779,7 +808,9 @@ body.lang-ne .donor-table th {
 
   .split,
   .visit-teaser-inner,
-  .history-item {
+  .history-item,
+  .home-video-grid,
+  .video-grid {
     grid-template-columns: 1fr;
   }
 
