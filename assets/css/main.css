@@ -676,6 +676,10 @@ body.lang-ne .donor-table th {
   background: #111;
 }
 
+.video-frame-facebook {
+  aspect-ratio: 16 / 9;
+}
+
 .video-frame iframe {
   position: absolute;
   inset: 0;

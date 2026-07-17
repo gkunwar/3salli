@@ -1,16 +1,18 @@
-# Replace these sample video IDs with temple-specific uploads when ready.
-- id: jfKfPfyJRdk
-  title_ne: शान्त भक्ति संगीत (नमूना)
-  title_en: Peaceful devotion music (sample)
-  note_ne: वास्तविक मन्दिर भिडियो उपलब्ध हुँदा बदल्नुहोस्।
-  note_en: Replace when temple videos are available.
-- id: 5qap5aO4i9A
-  title_ne: ध्यान र शान्ति (नमूना)
-  title_en: Meditation ambience (sample)
-  note_ne: युट्युबमा मन्दिरका आधिकारिक भिडियो थप्न सकिन्छ।
-  note_en: Add official temple uploads on YouTube later.
-- id: DWcJFNfaw9c
-  title_ne: नेपाली पहाडी दृश्य (नमूना)
-  title_en: Nepali hill scenery (sample)
-  note_ne: यात्रा र दर्शनसम्बन्धी सामग्रीका लागि स्थानधारक।
-  note_en: Placeholder for travel and darshan content.
+- platform: youtube
+  id: mnTA_LpI-Zw
+  title_ne: सराये नाच — गर्छा तीन सल्ली भगवती मन्दिर (भाग १)
+  title_en: Saraye dance — Garchha Teen Salli Bhagwati Temple (Part 1)
+  note_ne: मन्दिर परिसरमा सराये नाचको दृश्य।
+  note_en: Saraye dance at the temple grounds.
+- platform: youtube
+  id: XKL26hgHMt4
+  title_ne: सराये नाच — गर्छा तीन सल्ली भगवती मन्दिर (भाग २)
+  title_en: Saraye dance — Garchha Teen Salli Bhagwati Temple (Part 2)
+  note_ne: सराये नाचको दोस्रो भाग।
+  note_en: Part two of the Saraye dance.
+- platform: facebook
+  embed_src: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2174708926689181%2F&show_text=false&width=560&t=0"
+  title_ne: मन्दिरसम्बन्धी फेसबुक भिडियो
+  title_en: Temple Facebook video
+  note_ne: फेसबुकमा साझा गरिएको मन्दिर भिडियो।
+  note_en: Temple video shared on Facebook.

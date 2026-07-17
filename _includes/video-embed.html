@@ -1,0 +1,23 @@
+{% assign v = include.video %}
+{% assign title = v.title_en %}
+{% if page.lang == 'ne' %}
+  {% assign title = v.title_ne %}
+{% endif %}
+<div class="video-frame{% if v.platform == 'facebook' %} video-frame-facebook{% endif %}">
+  {% if v.platform == 'facebook' %}
+  <iframe
+    src="{{ v.embed_src }}"
+    title="{{ title }}"
+    loading="lazy"
+    scrolling="no"
+    allowfullscreen="true"
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  {% else %}
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/{{ v.id }}"
+    title="{{ title }}"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  {% endif %}
+</div>
