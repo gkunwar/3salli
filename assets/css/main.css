@@ -1,17 +1,22 @@
 :root {
-  --ink: #1c1410;
-  --ink-soft: #3d322a;
-  --muted: #6b5e52;
-  --paper: #f3ebe0;
-  --paper-deep: #e7dccb;
-  --mist: #d5e0df;
-  --hill: #2f4a42;
-  --hill-deep: #1c332d;
-  --vermillion: #9c2b1f;
-  --vermillion-deep: #7a1f16;
-  --gold: #b0892f;
-  --gold-soft: #d4b56a;
-  --line: rgba(28, 20, 16, 0.12);
+  /* Temple + nature tourism palette */
+  --ink: #14241f;
+  --ink-soft: #2c433a;
+  --muted: #5a6f66;
+  --paper: #f1f6f3;
+  --paper-deep: #dde8e2;
+  --mist: #c5ddd3;
+  --sky: #b7d0dc;
+  --hill: #3d6b55;
+  --hill-deep: #16352a;
+  --pine: #1f4d3a;
+  --pine-bright: #2f6b50;
+  /* Temple warmth (saffron / copper) — secondary accent */
+  --vermillion: #c45c26;
+  --vermillion-deep: #9e4518;
+  --gold: #c9a227;
+  --gold-soft: #e6c96a;
+  --line: rgba(20, 36, 31, 0.11);
   --max: 72rem;
   --font-display-ne: "Noto Serif Devanagari", "Noto Sans Devanagari", serif;
   --font-display-en: "Source Serif 4", Georgia, serif;
@@ -34,9 +39,10 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(213, 224, 223, 0.7), transparent 55%),
-    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(176, 137, 47, 0.12), transparent 45%),
-    linear-gradient(180deg, #efe6d8 0%, var(--paper) 40%, #ebe3d6 100%);
+    radial-gradient(ellipse 90% 55% at 0% -5%, rgba(183, 208, 220, 0.55), transparent 50%),
+    radial-gradient(ellipse 70% 45% at 100% 5%, rgba(197, 221, 211, 0.65), transparent 48%),
+    radial-gradient(ellipse 50% 35% at 70% 100%, rgba(201, 162, 39, 0.08), transparent 50%),
+    linear-gradient(180deg, #eaf2ef 0%, var(--paper) 38%, #e7f0eb 100%);
   font-family: var(--font-body-en);
   font-size: 1.05rem;
   line-height: 1.65;
@@ -54,13 +60,13 @@ img {
 }
 
 a {
-  color: var(--vermillion-deep);
+  color: var(--pine);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
 
 a:hover {
-  color: var(--vermillion);
+  color: var(--vermillion-deep);
 }
 
 h1, h2, h3 {
@@ -91,7 +97,7 @@ body.lang-en .footer-blessing {
 
 .eyebrow {
   margin: 0 0 0.6rem;
-  color: var(--vermillion);
+  color: var(--pine-bright);
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -115,7 +121,7 @@ body.lang-ne .eyebrow {
   top: 0;
   z-index: 40;
   backdrop-filter: blur(10px);
-  background: rgba(243, 235, 224, 0.86);
+  background: rgba(241, 246, 243, 0.88);
   border-bottom: 1px solid var(--line);
 }
 
@@ -143,11 +149,12 @@ body.lang-ne .eyebrow {
   display: grid;
   place-items: center;
   border-radius: 0.35rem;
-  background: linear-gradient(145deg, var(--vermillion), var(--vermillion-deep));
-  color: #fff8ef;
+  background: linear-gradient(145deg, var(--pine-bright), var(--hill-deep));
+  color: #f4faf6;
   font-family: var(--font-display-ne);
   font-weight: 700;
   font-size: 1.25rem;
+  box-shadow: inset 0 -2px 0 rgba(201, 162, 39, 0.45);
 }
 
 .logo-text {
@@ -182,16 +189,16 @@ body.lang-ne .eyebrow {
 
 .site-nav a[aria-current="page"],
 .site-nav a:hover {
-  color: var(--vermillion-deep);
+  color: var(--pine);
 }
 
 .lang-switch {
   margin-left: 0.35rem;
   padding: 0.35rem 0.7rem;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(61, 107, 85, 0.28);
   border-radius: 0.3rem;
-  background: rgba(255, 255, 255, 0.45);
-  color: var(--ink) !important;
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--pine) !important;
   font-weight: 600;
   font-size: 0.85rem;
   text-decoration: none !important;
@@ -256,8 +263,8 @@ body.lang-ne .eyebrow {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(28, 51, 45, 0.25) 0%, rgba(28, 20, 16, 0.55) 45%, rgba(20, 14, 10, 0.82) 100%),
-    linear-gradient(90deg, rgba(28, 20, 16, 0.45), transparent 55%);
+    linear-gradient(180deg, rgba(22, 53, 42, 0.2) 0%, rgba(20, 36, 31, 0.45) 42%, rgba(14, 28, 24, 0.82) 100%),
+    linear-gradient(95deg, rgba(22, 53, 42, 0.55), transparent 58%);
 }
 
 .hero-content {
@@ -274,6 +281,7 @@ body.lang-ne .eyebrow {
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   font-weight: 700;
   color: var(--gold-soft);
+  text-shadow: 0 1px 12px rgba(22, 53, 42, 0.35);
 }
 
 .hero h1 {
@@ -312,24 +320,24 @@ body.lang-ne .eyebrow {
 }
 
 .btn-primary {
-  background: var(--vermillion);
-  color: #fff8ef !important;
+  background: linear-gradient(160deg, var(--pine-bright), var(--pine));
+  color: #f4faf6 !important;
 }
 
 .btn-primary:hover {
-  background: var(--vermillion-deep);
-  color: #fff8ef !important;
+  background: linear-gradient(160deg, var(--hill), var(--hill-deep));
+  color: #f4faf6 !important;
 }
 
 .btn-ghost {
-  background: rgba(255, 248, 239, 0.12);
-  color: #fff8ef !important;
-  border: 1px solid rgba(255, 248, 239, 0.35);
+  background: rgba(244, 250, 246, 0.12);
+  color: #f4faf6 !important;
+  border: 1px solid rgba(230, 201, 106, 0.45);
 }
 
 .btn-ghost:hover {
-  background: rgba(255, 248, 239, 0.2);
-  color: #fff8ef !important;
+  background: rgba(230, 201, 106, 0.18);
+  color: #f4faf6 !important;
 }
 
 /* Sections */
@@ -377,7 +385,7 @@ body.lang-ne .eyebrow {
   margin: 0;
   overflow: hidden;
   border-radius: 0.35rem;
-  box-shadow: 0 18px 40px rgba(28, 20, 16, 0.12);
+  box-shadow: 0 18px 40px rgba(22, 53, 42, 0.14);
 }
 
 .about-figure img {
@@ -388,8 +396,8 @@ body.lang-ne .eyebrow {
 
 .explore-band {
   background:
-    linear-gradient(180deg, rgba(47, 74, 66, 0.06), transparent 30%),
-    linear-gradient(90deg, transparent, rgba(176, 137, 47, 0.06), transparent);
+    linear-gradient(180deg, rgba(61, 107, 85, 0.07), transparent 32%),
+    linear-gradient(90deg, transparent, rgba(183, 208, 220, 0.22), transparent);
 }
 
 .explore-grid {
@@ -403,15 +411,15 @@ body.lang-ne .eyebrow {
   flex-direction: column;
   gap: 0.45rem;
   padding: 1.35rem 1.4rem;
-  border-top: 2px solid var(--vermillion);
-  background: rgba(255, 252, 247, 0.55);
+  border-top: 2px solid var(--pine-bright);
+  background: rgba(255, 255, 255, 0.58);
   color: inherit;
   text-decoration: none;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .explore-link:hover {
-  background: rgba(255, 252, 247, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   transform: translateY(-2px);
   color: inherit;
 }
@@ -421,7 +429,7 @@ body.lang-ne .eyebrow {
 }
 
 .explore-label {
-  color: var(--vermillion);
+  color: var(--pine);
   font-weight: 700;
   font-size: 0.95rem;
 }
@@ -438,7 +446,9 @@ body.lang-ne .eyebrow {
 }
 
 .home-videos-band {
-  background: linear-gradient(180deg, rgba(156, 43, 31, 0.04), transparent 55%);
+  background:
+    linear-gradient(180deg, rgba(183, 208, 220, 0.28), transparent 60%),
+    linear-gradient(0deg, rgba(61, 107, 85, 0.05), transparent 40%);
 }
 
 .home-video-grid {
@@ -464,8 +474,9 @@ body.lang-ne .eyebrow {
   gap: 0;
   overflow: hidden;
   border-radius: 0.4rem;
-  background: var(--hill-deep);
-  color: #f4ebe0;
+  background:
+    linear-gradient(145deg, var(--hill-deep) 0%, #1f4a3a 55%, #2a3d38 100%);
+  color: #f4faf6;
 }
 
 .visit-teaser-copy {
@@ -483,7 +494,7 @@ body.lang-ne .eyebrow {
 
 .visit-teaser-copy p {
   margin: 0;
-  color: rgba(244, 235, 224, 0.88);
+  color: rgba(244, 250, 246, 0.88);
 }
 
 .visit-teaser-media {
@@ -563,7 +574,7 @@ body.lang-ne .eyebrow {
 }
 
 .history-meta {
-  color: var(--vermillion);
+  color: var(--pine-bright);
   font-weight: 600;
   font-size: 0.92rem;
   margin: 0 0 0.4rem;
@@ -690,7 +701,7 @@ body.lang-ne .donor-table th {
 
 .route-duration {
   margin: 0 0 1rem;
-  color: var(--vermillion);
+  color: var(--pine);
   font-weight: 600;
 }
 
@@ -707,8 +718,8 @@ body.lang-ne .donor-table th {
 .route-tip {
   margin: 0;
   padding: 0.9rem 1rem;
-  background: rgba(47, 74, 66, 0.08);
-  border-left: 3px solid var(--hill);
+  background: rgba(61, 107, 85, 0.1);
+  border-left: 3px solid var(--gold);
   color: var(--ink-soft);
 }
 
@@ -719,7 +730,7 @@ body.lang-ne .donor-table th {
 .site-footer {
   margin-top: 2rem;
   border-top: 1px solid var(--line);
-  background: linear-gradient(180deg, transparent, rgba(47, 74, 66, 0.08));
+  background: linear-gradient(180deg, transparent, rgba(61, 107, 85, 0.1));
 }
 
 .site-footer-inner {
@@ -792,7 +803,7 @@ body.lang-ne .donor-table th {
     align-items: stretch;
     gap: 0;
     padding: 0.75rem 1rem 1rem;
-    background: rgba(243, 235, 224, 0.98);
+    background: rgba(241, 246, 243, 0.98);
     border-bottom: 1px solid var(--line);
   }
 

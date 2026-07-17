@@ -11,7 +11,7 @@ ne:
   nav_visit: कसरी पुग्ने
   menu: मेनु
   close: बन्द
-  cta_visit: बाटो हेर्नुहोस्
+  cta_visit: भ्रमण योजना
   cta_story: मन्दिरको कथा
   cta_donate_info: दाता सूची
   location_label: स्थान
@@ -19,10 +19,10 @@ ne:
   province: लुम्बिनी प्रदेश, नेपाल
   footer_blessing: जय भगवती माता
   footer_note: नमूना सामग्री — वास्तविक विवरण पछि अद्यावधिक गरिनेछ।
-  home_hero_line: पहाडी शान्तिका देवस्थान
-  home_hero_sub: अर्घाखाँचीको गर्छामा अवस्थित तीन सल्ली भागवती मन्दिर — आस्था, इतिहास र समुदायको केन्द्र।
-  home_about_title: मन्दिरबारे
-  home_about_text: तीन सल्ली भागवती मन्दिर स्थानीय श्रद्धालुहरूको आस्थाको थलो हो। यहाँ पूजा, चाडपर्व र सामुदायिक सेवा नियमित रूपमा हुन्छन्।
+  home_hero_line: पहाडी प्रकृति र आस्थाको गन्तव्य
+  home_hero_sub: अर्घाखाँचीको गर्छामा अवस्थित तीन सल्ली भागवती मन्दिर — दर्शन, हरियाली र शान्त पहाडी अनुभव।
+  home_about_title: किन आउने?
+  home_about_text: तीन सल्ली भागवती मन्दिर आस्थासँगै प्रकृति र गाउँको सौन्दर्य अनुभव गर्ने ठाउँ हो। पूजा, चाडपर्व र पहाडी बाटोको यात्रा यहाँ एकै ठाउँ जोडिन्छ।
   home_sections_title: अन्वेषण गर्नुहोस्
   home_story_card: मन्दिरको कथा र आस्थाको यात्रा
   home_history_card: पुरानो, हालको र नयाँ मन्दिरको इतिहास
@@ -66,7 +66,7 @@ en:
   nav_visit: How to Reach
   menu: Menu
   close: Close
-  cta_visit: Get directions
+  cta_visit: Plan your visit
   cta_story: Read the story
   cta_donate_info: View donors
   location_label: Location
@@ -74,10 +74,10 @@ en:
   province: Lumbini Province, Nepal
   footer_blessing: Jai Bhagwati Mata
   footer_note: Sample content — details will be updated with verified information.
-  home_hero_line: A hill shrine of quiet devotion
-  home_hero_sub: Teen Salli Bhagwati Temple in Garchha, Arghakhanchi — a place of faith, memory, and community.
-  home_about_title: About the temple
-  home_about_text: Teen Salli Bhagwati Temple is a local centre of devotion. Worship, festivals, and community service continue throughout the year.
+  home_hero_line: A sacred stop in the green hills
+  home_hero_sub: Teen Salli Bhagwati Temple in Garchha, Arghakhanchi — darshan, pine country, and a quiet hill escape.
+  home_about_title: Why visit
+  home_about_text: Come for devotion and stay for the landscape. Teen Salli pairs temple life with village paths, pine hills, and the calm of Lumbini’s countryside.
   home_sections_title: Explore
   home_story_card: The temple story and living faith
   home_history_card: Old, present, and new temple eras
