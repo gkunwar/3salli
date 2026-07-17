@@ -1,3 +1,9 @@
+- platform: facebook
+  embed_src: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2174708926689181%2F&show_text=false&width=560&t=0"
+  title_ne: मन्दिरसम्बन्धी फेसबुक भिडियो
+  title_en: Temple Facebook video
+  note_ne: फेसबुकमा साझा गरिएको मन्दिर भिडियो।
+  note_en: Temple video shared on Facebook.
 - platform: youtube
   id: mnTA_LpI-Zw
   title_ne: सराये नाच — गर्छा तीन सल्ली भगवती मन्दिर (भाग १)
@@ -22,9 +28,3 @@
   title_en: Offering at Teen Salli Bhagwati — rare historical video
   note_ne: अर्घाखाँची, मलारानीस्थित मन्दिरको ऐतिहासिक दृश्य।
   note_en: Historical footage from the temple in Malarani, Arghakhanchi.
-- platform: facebook
-  embed_src: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2174708926689181%2F&show_text=false&width=560&t=0"
-  title_ne: मन्दिरसम्बन्धी फेसबुक भिडियो
-  title_en: Temple Facebook video
-  note_ne: फेसबुकमा साझा गरिएको मन्दिर भिडियो।
-  note_en: Temple video shared on Facebook.
